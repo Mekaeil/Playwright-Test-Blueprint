@@ -51,6 +51,7 @@ TEST_MESSAGE = "🧪🧪 Let's test the application! \n"
 install:
 	@echo $(INSTALLING_MESSAGE)
 	npm install
+	npx playwright install
 	cp .env.example .env
 	cd deployment && docker-compose up $(APP_DOCKER_E2E_NAME) -d --force-recreate
 	exit 0
@@ -80,9 +81,9 @@ test-e2e:
 
 
 ## Executing E2E Tests Headed
-.PHONY: test-e2e-h 
+.PHONY: test-e2e-h
 test-e2e-h:
 	@echo $(TEST_MESSAGE)
 	@echo "\n"	
-	npx playwright test e2e/ --config=playwright.config.ts --headed --reporter=html
+	npm run test-e2e-h
 	exit 0	
