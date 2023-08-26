@@ -1,0 +1,23 @@
+version: '3.9'
+
+networks:
+  playwright:
+    name: playwright
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 130.30.0.0/16
+          gateway: 130.30.0.1
+
+services:
+  playwright-test-blueprint:
+    image: mcr.microsoft.com/playwright:latest
+    container_name: playwright-test-blueprint
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    command: /bin/sh -c "npm install && npm install -D @playwright/test && npx playwright test; tail -f /dev/null"
+    volumes:
+      - ../:/app
+    networks:
+      - playwright

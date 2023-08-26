@@ -1,0 +1,30 @@
+{
+	"name": "playwright-test-blueprint",
+	"version": "1.0.0",
+	"description": "End to End and API testing with Playwright",
+	"main": "index.js",
+	"scripts": {
+		"test-e2e": "npx playwright test e2e/ --config=playwright.config.ts",
+		"test-api": "npx playwright test api/ --config=playwright.api.config.ts",
+		"test-e2e-h": "npx playwright test e2e/ --config=playwright.config.ts --headed --reporter=html"
+	},
+	"keywords": [
+		"Playwright",
+		"E2E",
+		"API Testing",
+		"Integration",
+		"Testing"
+	],
+	"author": "Michael Andish",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.3.1",
+		"jsonschema": "^1.4.1",
+		"prettier": "^3.0.2"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.37.1",
+		"@types/node": "^18.17.5",
+		"typescript": "^5.1.6"
+	}
+}
