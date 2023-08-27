@@ -11,6 +11,7 @@ You can install the Playwright with Docker and executing all of your test. As yo
 ```
 make install
 ```
+![DEMO Playwright Test Blueprint](https://github.com/Mekaeil/Playwright-Test-Blueprint/blob/main/assets/demo-playwright-install.gif)
 
 ### Executing API Tests
 ``` 
