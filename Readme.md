@@ -2,7 +2,7 @@
 
 This repository is just a blueprint to help us to start implementing End 2 End test for our projects/ application in a quick and clean way to have more flexibility in the future.
 
-![DEMO Playwright Test Blueprint](https://github.com/Mekaeil/Playwright-Test-Blueprint/blob/main/assets/demo-playwright.gif)
+![DEMO Playwright Test Blueprint](https://github.com/Mekaeil/Playwright-Test-Blueprint/blob/main/assets/demo-playwright-commands.gif)
 
 
 # Install & Commands
